@@ -188,7 +188,7 @@ function createConsoleSpinner(message = '启动中') {
 async function constructServer(moduleDefs) {
   const app = express()
   const { CORS_ALLOW_ORIGIN } = process.env
-  const allowOrigins = ['*']  // 强制允许所有来源
+  const allowOrigins = null
   app.set('trust proxy', true)
 
   /**
